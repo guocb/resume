@@ -1,0 +1,182 @@
+\documentclass[10pt,letterpaper]{article}
+
+\include{structure}
+
+\begin{document} 
+
+
+\maintitle{Congbin Guo}{July 9, 1979}
+
+\noindent\href{mailto:cguo@vmware.com}{cguo@vmare.com}\bull
+\textsmaller{+}1 (650) 387-8025\bull Member of Technical Staff, VMware
+
+\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Professional Experience} % Top level section
+
+\headedsection
+{Member of Technical Staff, VMware, Aug 2010 to date}
+{\textsc{Palo Alto, CA USA}} {
+
+\headedsubsection % Job title entry for the current employer
+{SCM infrastructure development} {}
+{
+    \begin{itemize}
+        \item Perforce fail-over process automation
+            \begin{itemize}
+                \item Create a fresh new python script (about 2KLOC) to automate the process.
+                    The script can handle many different cases in fail-over; and record every
+                    step result so that it can be re-started from last failed step. Now it has
+                    become one of the most important tools for SCM team.
+                \item Implement web API for Perforces base database site to support the
+                    fail-over script
+                \item Improve the perforce instance configuration policy to simply the
+                    process
+            \end{itemize}
+        \item Other Perforce tools and infrastructure development
+            \begin{itemize}
+            \item   Create Perforce database rebuilds script, another frequently used
+            script.
+            \item   Create scripts to check Perforce missing versioned files, monitor
+            extraneous files on perforce hosts, check file type changes in Perforce
+            submit, etc.
+            \item   Improve the web site of Perforce base database and account management
+            \end{itemize}
+        \item Git infrastructure setup and development
+            \begin{itemize}
+            \item   Setup gitolite (git access layer tool) on VMware official git server
+            and fix bugs
+            \item   Improve the infrastructure to create git account for MTS and AWF
+            \item   Consolidate VMware internal version of git-p4 and fix bugs
+            \item   Maintain VMware legacy gitorious server and fix bugs
+            \end{itemize}
+        \item Other build infrastructure maintenance and support
+            \begin{itemize}
+            \item   Create puppet rules to configure the primary/hot-spare instances for
+            Perforces base database, VMware internal maven repository and official git
+            server in OSDC and WDC
+            \item   Maintain VMware internal maven repository for artifacts upload request
+            \item   Monitor build/scm-team/git/dbc mail-list and support urgent issues
+            \end{itemize}
+
+    \end{itemize}
+}
+\headedsubsection % Job title entry for the current employer
+{VMware ESX/Workstation build enhancement} {}
+{
+    \begin{itemize}
+        \item VMware ESX build enhancement
+            \begin{itemize}
+                \item   Fix legacy bugs filed against SCons/ESX build
+                \item   Decrease the disk space consumed in ESX build process
+            \end{itemize}
+        \item VMware Workstation build enhancement
+            -   Improve the performance of Make and Ant build
+            -   Add new features to facilitate developers
+    \end{itemize}
+}
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.kde.org}{KDE}}
+{\href{http://edu.kde.org/kturtle}{edu.kde.org/kturtle}} {
+
+\headedsubsection % Job title entry for the current employer
+{Software Engineer}
+{Dec '03 -- present}
+{\bodytext{KTurtle is an educational programming environment that simplifies learning the basics of programming. At early age I learned programming using \acr{MSX-LOGO}, by creating KTurtle I want to ensure future generation's access to a similar piece of software. I was honored when KTurtle got admitted to \acr{KDE} in 2003.}}
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://truetopiaproject.org}{Truetopia Project}}
+{\href{http://truetopiaproject.org}{truetopiaproject.org}} {
+
+\headedsubsection % Job title entry for the current employer
+{Initiator}
+{Nov '07 -- Apr '10}
+{\bodytext{The Truetopia Project is an open source web application (Rails) to facilitate self-governing communities. It provides a workflow for collaborative problem identification and solution design.}}
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.opendream.th}{Opendream}}
+{\textsc{Bangkok, Thailand}} {
+
+\headedsubsection % Job title entry for the current employer
+{\acr{IT} Consultant}
+{Aug '09 -- Sep '09}
+{\bodytext{Architected and largely implemented an open source media sharing web service (\acr{REST} api) that facilitates video uploads, transcoding and streaming. Coached their development team on system design, Ruby development (using Merb/Rails) and testing strategies such as \acr{TDD}/\acr{BDD}.}}
+}
+
+%------------------------------------------------
+
+\begin{center}
+\textit{Please refer to \href{http://www.linkedin.com/in/ciesbreijs}{my Linkedin profile} for the complete list of work experiences along with recommendations.}
+\end{center}
+
+%------------------------------------------------
+
+\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Education} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{Beihang University}
+{\textsc{Beijing, China}} {
+\headedsubsection {Bachelor degree in Automation} {Sept. 1998 -- Jun. 2002} {}
+}
+\headedsection
+{Beihang University}
+{\textsc{Beijing, China}} {
+\headedsubsection {Master degree in Computer Science \& Technology}
+    {Sept. 2003 -- Apr. 2006} {}
+}
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Skills} % Top level section
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Technical specialties:}
+{Software design and implementation, with(in) a team. I love Ruby/Python/Java/C++ and flirt regularly with Haskell. Solid knowledge of web technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF}, \acr{REST}, \acr{SOAP} and JavaScript (mainly jQuery). Linux administration skills:\ bash, Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud (Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter automation (Puppet and Chef), continuous integration (Hudson/Jenkins).}
+
+%------------------------------------------------
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Natural languages:}
+{Dutch \textit{(mother tongue)}, English \textit{(full professional proficiency)}, German \textit{(limited working proficiency)}, French \textit{(elementary proficiency)} and Mandarin Chinese \textit{(beginner)}.}
+
+%------------------------------------------------
+
+\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Interests} % Top level section
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Non-exhaustive and in alphabetical order:}
+{Art, Buddhism, cryptography, music, open source, philosophy, software engineering, travel, typography (e.g.\ graphic design, \LaTeX), \acr{UI}/\acr{UX} and vegetarian cooking.}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
