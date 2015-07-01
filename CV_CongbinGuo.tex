@@ -27,19 +27,21 @@
     \begin{itemize}
         \item \href{http://bmps.eng.vmware.com}{BMPS} \& Automerge enhancement
             \begin{itemize}
-                \item Implement new BMPS UI for bulk edit features.
+                \item Implement new BMPS bulk editing features on both UI and
+                    backend.
                 \item Fix bugs of BMPS and Automerge.
             \end{itemize}
         \item Git infrastructure enhancement
             \begin{itemize}
-                \item Implement a BMPS-like Git commit message format control.
-                \item Implement a mechanism for Git repository branches locking/unlocking.
-                \item Implement Automerge for Git.
+                \item Implement features of BMPS-like Git commit message format
+                    control, branch locking/unlocking, etc.
+                \item Implement Automerge feature for Git.
+                \item Implement backend of a 
+                    \href{http://git.eng.vmware.com}{web UI for Git
+                    repositories browsing and pull requests}.
                 \item Create a tool to manage Git repositories mirroring which
                     supports upstream of Git, SVN, HG, and CVS.
                 \item Implement tools for Git server health check.
-                \item Implement backend for
-                    \href{http://git.eng.vmware.com}{Git web UI}.
             \end{itemize}
 
     \end{itemize}
@@ -57,7 +59,7 @@
         \item Perforce fail-over process automation
             \begin{itemize}
                 \item Create a python script (\~{}2KLOC) to automate the
-                    process.  The script can handle many different cases in
+                    process.  The script handles many different cases during 
                     fail-over; and record every step result so that it can be
                     re-started from last failed step. Now it has become one of
                     the most important tools for SCM team.
@@ -68,27 +70,28 @@
             \end{itemize}
         \item Other Perforce tools and infrastructure development
             \begin{itemize}
-                \item   Create Perforce database rebuilds script, another frequently used
-                    script.
-                \item   Create scripts to check Perforce missing versioned files, monitor
-                    extraneous files on perforce hosts, check file type changes in Perforce
-                    submit, etc.
-                \item   Improve the web site of Perforce base database and account management
+                \item Create Perforce database rebuilds script, another
+                    important tool for SCM team. 
+                \item Create scripts to check Perforce missing versioned files,
+                    monitor extraneous files on perforce hosts, check file type
+                    changes in Perforce submit, etc.
+                \item Improve the web site of Perforce base database and account management
             \end{itemize}
         \item Git infrastructure setup and development
             \begin{itemize}
-                \item   Setup gitolite (Git access layer tool) on VMware official Git server
-                    and fix bugs
-                \item   Improve the infrastructure to create Git account for MTS and AWF
-                \item   Consolidate VMware internal version of git-p4 and fix bugs
-                \item   Maintain VMware legacy gitorious server and fix bugs
+                \item Setup and customize gitolite (Git access layer tool) on
+                    VMware official Git server.
+                    
+                \item Improve the infrastructure to create Git account for MTS and AWF
+                \item Consolidate VMware internal version of git-p4 and fix bugs
+                \item Maintain VMware legacy gitorious server and fix bugs
             \end{itemize}
         \item Other build infrastructure maintenance and support
             \begin{itemize}
-                \item   Create puppet rules to configure the primary/hot-spare instances for
+                \item Create puppet rules to configure the primary/hot-spare instances for
                     Perforces base database, VMware internal maven repository and official Git
                     server in OSDC and WDC
-                \item   Maintain VMware internal maven repository for artifacts upload request
+                \item Maintain VMware internal maven repository for artifacts upload request
             \end{itemize}
 
     \end{itemize}
@@ -99,13 +102,13 @@
     \begin{itemize}
         \item VMware ESX build enhancement
             \begin{itemize}
-                \item   Fix legacy bugs filed against SCons/ESX build
-                \item   Decrease the disk space consumed in ESX build process
+                \item Fix legacy bugs filed against SCons/ESX build
+                \item Decrease the disk space consumed in ESX build process
             \end{itemize}
         \item VMware Workstation build enhancement
             \begin{itemize}
-            \item   Improve the performance of Make and Ant build
-            \item   Add new features to facilitate developers
+            \item Improve the performance of Make and Ant build
+            \item Add new features to facilitate developers
             \end{itemize}
     \end{itemize}
 }
