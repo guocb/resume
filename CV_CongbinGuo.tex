@@ -5,9 +5,9 @@
 \begin{document} 
 
 
-\maintitle{Congbin Guo}{July 9, 1979}
+\maintitle{Congbin Guo}{July, 1979}
 
-\noindent\href{mailto:cguo@vmware.com}{cguo@vmare.com}\bull
+\noindent\href{mailto:guocongbin@gmail.com}{guocongbin@gmail.com}/\href{mailto:cguo@vmware.com}{cguo@vmare.com}\bull
 \textsmaller{+}1 (650) 387-8025\bull Member of Technical Staff, VMware
 
 \spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
@@ -25,23 +25,25 @@
 {SCM infrastructure development} {Sept. 2013 -- present}
 {
     \begin{itemize}
-        \item \href{http://bmps.eng.vmware.com}{BMPS} \& Automerge enhancement
+        \item VMware \href{http://bmps.eng.vmware.com}{BMPS} \& Automerge
+            enhancement (home-grown branch policy management and automatic
+            merge tools)
             \begin{itemize}
-                \item Implement new BMPS bulk editing features on both UI and
-                    backend.
+                \item Implement new BMPS feature of bulk editing multiple
+                    branches in one transaction.
                 \item Fix bugs of BMPS and Automerge.
             \end{itemize}
         \item Git infrastructure enhancement
             \begin{itemize}
-                \item Implement features of BMPS-like Git commit message format
-                    control, branch locking/unlocking, etc.
-                \item Implement Automerge feature for Git.
+                \item Implement branch policy management and Automerge features
+                    for Git.
                 \item Implement backend of a 
-                    \href{http://git.eng.vmware.com}{web UI for Git
-                    repositories browsing and pull requests}.
-                \item Create a tool to manage Git repositories mirroring which
-                    supports upstream of Git, SVN, HG, and CVS.
-                \item Implement tools for Git server health check.
+                    \href{http://git.eng.vmware.com}{web UI for browsing Git
+                    repositories and creating pull requests}.
+                \item Implement framework of Git repositories mirroring from
+                    Git, Mercurial, Subversion, or CVS upstream.
+                \item Implement tools for Git server health check, garbage
+                    collection, etc.
             \end{itemize}
 
     \end{itemize}
@@ -58,40 +60,50 @@
     \begin{itemize}
         \item Perforce fail-over process automation
             \begin{itemize}
-                \item Create a python script (\~{}2KLOC) to automate the
-                    process.  The script handles many different cases during 
-                    fail-over; and record every step result so that it can be
-                    re-started from last failed step. Now it has become one of
-                    the most important tools for SCM team.
-                \item Implement web API for Perforces base database site to support the
-                    fail-over script
-                \item Improve the perforce instance configuration policy to simply the
-                    process
+                \item Create tool in Python (\~{}2KLOC) to automate the
+                    process.
+                    The tool saves results of every step, so it can continue
+                    the remain steps from the failed step of last running.
+                    It is one of the most important tools for VMware SCM team.
+
+                \item Implement web API for Perforce instances management site
+                    to support the Perforce fail-over tool.
+
+                \item Improve the Puppet configuration of Perforce to simplify
+                    the process.
             \end{itemize}
         \item Other Perforce tools and infrastructure development
             \begin{itemize}
-                \item Create Perforce database rebuilds script, another
-                    important tool for SCM team. 
-                \item Create scripts to check Perforce missing versioned files,
+                \item Create tool to rebuild Perforce database.
+                    It is another most important tool for VMware SCM team. 
+
+                \item Create tools to check Perforce missing versioned files,
                     monitor extraneous files on perforce hosts, check file type
                     changes in Perforce submit, etc.
-                \item Improve the web site of Perforce base database and account management
+
+                \item Improve the web site for Perforce instances management
+                    and account management.
             \end{itemize}
         \item Git infrastructure setup and development
             \begin{itemize}
                 \item Setup and customize gitolite (Git access layer tool) on
-                    VMware official Git server.
+                    VMware production Git server.
                     
-                \item Improve the infrastructure to create Git account for MTS and AWF
-                \item Consolidate VMware internal version of git-p4 and fix bugs
-                \item Maintain VMware legacy gitorious server and fix bugs
+                \item Implement automatic Git accounts provision tool for
+                    full-time employees and contractors.
+
+                \item Consolidate VMware internal version of git-p4 and fix
+                    bugs.
+                \item Maintain VMware legacy gitorious server.
             \end{itemize}
         \item Other build infrastructure maintenance and support
             \begin{itemize}
-                \item Create puppet rules to configure the primary/hot-spare instances for
-                    Perforces base database, VMware internal maven repository and official Git
-                    server in OSDC and WDC
-                \item Maintain VMware internal maven repository for artifacts upload request
+                \item Create Puppet modules to configure the primary/hot-spare
+                    instances of Perforce instances management web site, VMware
+                    internal maven repository and production Git server in
+                    local and remote data centers.
+                \item Maintain VMware production maven repository and
+                    Subversion server.
             \end{itemize}
 
     \end{itemize}
@@ -102,13 +114,13 @@
     \begin{itemize}
         \item VMware ESX build enhancement
             \begin{itemize}
-                \item Fix legacy bugs filed against SCons/ESX build
-                \item Decrease the disk space consumed in ESX build process
+                \item Fix legacy bugs of SCons/ESX build.
+                \item Optimize the disk space consumed in ESX build process.
             \end{itemize}
         \item VMware Workstation build enhancement
             \begin{itemize}
-            \item Improve the performance of Make and Ant build
-            \item Add new features to facilitate developers
+                \item Improve the performance of Make and Ant build.
+                \item Add new features to facilitate developers.
             \end{itemize}
     \end{itemize}
 }
@@ -123,13 +135,15 @@
 {\textsc{Beijing, China}} {
 
 \headedsubsection % Job title entry for the current employer
-{Tech. lead of IBM Systems Director\texttrademark Development on IBM system p}
+{Tech. lead of IBM Systems Director\texttrademark Development on IBM Power
+Systems}
 {Oct. 2008 -- Aug. 2010}
 {
     \begin{itemize}
         \item Lead team to work on parts of IBM Systems Director\texttrademark
-            (hereafter Director) update manager
-        \item Lead team to work on IBM Common Director Appliance for exploiters
+            (hereafter Director) update manager.
+        \item Lead team to work on IBM Common Director Appliance for
+            exploiters.
     \end{itemize}
 }
 }
@@ -139,28 +153,29 @@
 {\textsc{Beijing, China}} {
 
 \headedsubsection % Job title entry for the current employer
-{Tech. lead of IBM Systems Director\texttrademark Development on IBM system p}
+{Tech. lead of IBM Systems Director\texttrademark Development on IBM Power
+systems}
 {Apr. 2006 -- Aug. 2008}
 {
     \begin{itemize}
-        \item CIM and Director Development on IBM system p
-    \begin{itemize}
-\item Director enablement on IBM system p
-\item CIM (Common Information Modeling) development on AIX53
+        \item CIM (Common Information Modeling) and Director development on IBM Power systems.
+        \begin{itemize}
+            \item Enable Director on IBM Power systems.
+            \item Develop CIM providers on IBM AIX53.
+        \end{itemize}
+        \item Tech. lead of CIM development on IBM Power systems.
+        \begin{itemize}
+            \item Lead the CIM provider (instance/indication/metric)
+                development on IBM Power systems.
+            \item Lead the Director Server extension of IBM AIX hardware
+                resource monitoring.
+            \item Continuously integrate kinds of tools (static analysis,
+                memory leak check and code coverage measurement) with the team
+                development and unit test process.
+            \item Build China team image and gain extra team growth
+                opportunities.
+        \end{itemize}
     \end{itemize}
-\item Tech. lead of CIM Development on IBM system p
-    \begin{itemize}
-        \item Lead the CIM provider (instance/indication/metric) development on
-    IBM system p
-\item Lead the Director Server extension of AIX hardware resource
-    monitoring
-\item Continuously integrate kinds of tools (static analysis, memory leak
-    check and code coverage measurement) with the team development and unit
-    test process
-\item Build China team image and gain extra team grows opportunity
-    \end{itemize}
-    \end{itemize}
-
 
 }
 }
@@ -191,36 +206,26 @@
 {
     \bodytext{
     \begin{itemize}
-        \item Strong in python/django and puppet programming
+        \item Strong in Python/django, C/C++, shell script, Puppet programming
 
-        \item Strong in C/C++ programming on both Linux and Windows
+        \item Strong in SCM (Perforce, Git, etc.), build (SCons, makefile,
+            etc.) and packaging (RPM)
 
-        \item Strong in Linux shell script programming
-
-        \item Strong in SCM (Perforce, Git, etc.), build (SCons, makefile, ant)
-            and packaging (RPM)
-
-        \item Strong in Linux/AIX system administration
+        \item Strong in Linux/IBM AIX system administration
 
         \item Strong in Software Engineering, Agile, Unit Testing and Test
             Driven Development
 
-        \item Good English skill in both written and spoken
-
-        \item Good soft skill in presentation and communication
-
         \item Knowledgeable in VMware virtualization and Linux kernel-based
             virtualization
 
-        \item Knowledgeable in Java programming, eclipse plug-in development
+        \item Knowledgeable in Java, Perl, Ruby programming, eclipse plug-in
+            development
 
-        \item Knowledgeable in Perl and Ruby programming
-
-        \item Knowledgeable in IBM Power virtualization and Power system
-            architecture
-
-        \item Knowledgeable of cloud computing, virtualization, security,
+        \item Knowledgeable of cloud computing, IBM Power Systems, security,
             storage and system management in Data Center
+
+        \item Good soft skill in presentation and communication
     \end{itemize}
 }}
 
